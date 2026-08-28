@@ -8,11 +8,20 @@
 
 .nav-menu a {
   text-decoration: none;
-  color: #1f2937;
+  color: var(--color-foreground);
+  font-family: var(--font-body);
   font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition-instant) ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+  border-bottom-color: var(--color-foreground);
 }
 
 .nav-menu a.active {
-  color: #1f6feb;
   font-weight: 700;
+  border-bottom-color: var(--color-foreground);
 }

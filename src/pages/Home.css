@@ -6,12 +6,17 @@
 }
 
 .home h1 {
-  font-size: 2rem;
+  font-family: var(--font-display);
+  font-size: var(--heading-size);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
 }
 
 .home-image {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border: var(--border-thick);
+  border-radius: 0;
 }

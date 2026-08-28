@@ -1,0 +1,46 @@
+:root {
+  /* Palette — strictly these five colors, nothing else (spec FR-001) */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #525252;
+  --color-border-light: #e5e5e5;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Oversized, responsive heading scale: >=56px at mobile widths,
+     >=96px by desktop (1280px), per spec FR-002 / SC-002 */
+  --heading-size: clamp(3.5rem, 3rem + 4vw, 8rem);
+
+  /* Border weights (spec: line-based visual system, no shadows) */
+  --border-hairline: 1px solid var(--color-border-light);
+  --border-thin: 1px solid var(--color-foreground);
+  --border-medium: 2px solid var(--color-foreground);
+  --border-thick: 4px solid var(--color-foreground);
+  --border-ultra: 8px solid var(--color-foreground);
+
+  /* Motion: instant, binary state changes only (spec FR-008) */
+  --transition-instant: 100ms;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+}
+
+* {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Shared keyboard-focus indicator (spec FR-009) — :focus-visible so it
+   never appears on a mouse click, only keyboard/assistive navigation. */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-foreground);
+  outline-offset: 3px;
+}

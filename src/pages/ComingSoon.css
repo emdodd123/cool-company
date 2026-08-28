@@ -3,5 +3,13 @@
   margin: 0 auto;
   padding: 3rem 1rem;
   text-align: center;
-  color: #4b5563;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-body);
+  border-top: var(--border-thick);
+  border-radius: 0;
+}
+
+.coming-soon h1 {
+  font-family: var(--font-display);
+  color: var(--color-foreground);
 }
