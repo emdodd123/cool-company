@@ -34,9 +34,9 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 **Purpose**: Stand up the Vite + React project and its tooling
 
-- [ ] T001 Scaffold a Vite + React (JavaScript) app at the repository root — `npm create vite@latest . -- --template react` — producing `index.html`, `vite.config.js`, `package.json`, `src/main.jsx`, `src/App.jsx`
-- [ ] T002 [P] Add `react-router-dom` as a dependency (`npm install react-router-dom`)
-- [ ] T003 [P] Add Vitest + `@testing-library/react` + `jsdom` as dev dependencies, configure a `test` script in `package.json`, and add a `tests/unit/` jsdom test environment in `vite.config.js`
+- [X] T001 Scaffold a Vite + React (JavaScript) app at the repository root — `npm create vite@latest . -- --template react` — producing `index.html`, `vite.config.js`, `package.json`, `src/main.jsx`, `src/App.jsx`
+- [X] T002 [P] Add `react-router-dom` as a dependency (`npm install react-router-dom`)
+- [X] T003 [P] Add Vitest + `@testing-library/react` + `jsdom` as dev dependencies, configure a `test` script in `package.json`, and add a `tests/unit/` jsdom test environment in `vite.config.js`
 
 ---
 
@@ -46,9 +46,9 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 [P] Add placeholder image assets `src/assets/logo-placeholder.svg` and `src/assets/home-placeholder.svg` (per data-model.md LogoAsset/HomePageImage, research.md placeholder-asset decision)
-- [ ] T005 Wrap the app in a router: update `src/main.jsx` to render `<App />` inside `<BrowserRouter>`
-- [ ] T006 Create `src/App.jsx` with an empty `<Routes>` block ready to receive route entries (no routes defined yet — user stories below add their own)
+- [X] T004 [P] Add placeholder image assets `src/assets/logo-placeholder.svg` and `src/assets/home-placeholder.svg` (per data-model.md LogoAsset/HomePageImage, research.md placeholder-asset decision)
+- [X] T005 Wrap the app in a router: update `src/main.jsx` to render `<App />` inside `<BrowserRouter>`
+- [X] T006 Create `src/App.jsx` with an empty `<Routes>` block ready to receive route entries (no routes defined yet — user stories below add their own)
 
 **Checkpoint**: Routing skeleton in place — user story phases can now add pages and routes.
 
@@ -64,13 +64,13 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 > Write these first; they should fail until the implementation tasks below are done.
 
-- [ ] T007 [P] [US1] Smoke test in `tests/unit/Home.test.jsx` asserting the rendered `Home` component shows the exact heading text "Welcome to The Cool Company" and an `<img>` with non-empty `alt` text (per contracts/ui-contract.md Home guarantees)
+- [X] T007 [P] [US1] Smoke test in `tests/unit/Home.test.jsx` asserting the rendered `Home` component shows the exact heading text "Welcome to The Cool Company" and an `<img>` with non-empty `alt` text (per contracts/ui-contract.md Home guarantees)
 
 ### Implementation for User Story 1
 
-- [ ] T008 [P] [US1] Create `src/pages/Home.jsx` rendering the heading "Welcome to The Cool Company" and an `<img>` sourced from `src/assets/home-placeholder.svg` with descriptive `alt` text
-- [ ] T009 [P] [US1] Create `src/pages/Home.css` with basic layout styling for the heading and image
-- [ ] T010 [US1] Add the `/` route in `src/App.jsx` rendering `<Home />` (depends on T006, T008)
+- [X] T008 [P] [US1] Create `src/pages/Home.jsx` rendering the heading "Welcome to The Cool Company" and an `<img>` sourced from `src/assets/home-placeholder.svg` with descriptive `alt` text
+- [X] T009 [P] [US1] Create `src/pages/Home.css` with basic layout styling for the heading and image
+- [X] T010 [US1] Add the `/` route in `src/App.jsx` rendering `<Home />` (depends on T006, T008)
 
 **Checkpoint**: User Story 1 is fully functional and testable independently — home page shows the welcome heading and image.
 
@@ -84,16 +84,16 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 ### Tests for User Story 2 ⚠️
 
-- [ ] T011 [P] [US2] Smoke test in `tests/unit/Header.test.jsx` asserting the `Header` component renders a logo and exactly 3 nav items with labels "Home", "Products", "About Us" in that order (per contracts/ui-contract.md Header guarantees)
-- [ ] T012 [P] [US2] Smoke test in `tests/unit/App.test.jsx` asserting that clicking the "Home" nav item keeps the visitor on (or returns them to) the home page
+- [X] T011 [P] [US2] Smoke test in `tests/unit/Header.test.jsx` asserting the `Header` component renders a logo and exactly 3 nav items with labels "Home", "Products", "About Us" in that order (per contracts/ui-contract.md Header guarantees)
+- [X] T012 [P] [US2] Smoke test in `tests/unit/App.test.jsx` asserting that clicking the "Home" nav item keeps the visitor on (or returns them to) the home page
 
 ### Implementation for User Story 2
 
-- [ ] T013 [P] [US2] Create a nav items config (Home → `/`, Products → `/products`, About Us → `/about-us`) and `src/components/NavMenu.jsx` rendering the 3 links in order
-- [ ] T014 [P] [US2] Create `src/components/NavMenu.css` for a horizontally centered menu layout
-- [ ] T015 [US2] Create `src/components/Header.jsx` rendering the logo (from `src/assets/logo-placeholder.svg`, top-left) plus `<NavMenu />` (depends on T013)
-- [ ] T016 [P] [US2] Create `src/components/Header.css` positioning the logo top-left and the nav centered, remaining usable at both ~375px and ~1280px+ widths (FR-008, SC-002)
-- [ ] T017 [US2] Render `<Header />` in `src/App.jsx`, persistent above the routed page content on every route (depends on T006, T015)
+- [X] T013 [P] [US2] Create a nav items config (Home → `/`, Products → `/products`, About Us → `/about-us`) and `src/components/NavMenu.jsx` rendering the 3 links in order
+- [X] T014 [P] [US2] Create `src/components/NavMenu.css` for a horizontally centered menu layout
+- [X] T015 [US2] Create `src/components/Header.jsx` rendering the logo (from `src/assets/logo-placeholder.svg`, top-left) plus `<NavMenu />` (depends on T013)
+- [X] T016 [P] [US2] Create `src/components/Header.css` positioning the logo top-left and the nav centered, remaining usable at both ~375px and ~1280px+ widths (FR-008, SC-002)
+- [X] T017 [US2] Render `<Header />` in `src/App.jsx`, persistent above the routed page content on every route (depends on T006, T015)
 
 **Checkpoint**: User Stories 1 AND 2 both work — home page has working header, logo, and nav; "Home" nav item functions correctly.
 
@@ -107,13 +107,13 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 ### Tests for User Story 3 ⚠️
 
-- [ ] T018 [P] [US3] Smoke test (extend `tests/unit/App.test.jsx`) asserting that selecting "Products" and "About Us" each render the `ComingSoon` placeholder with the matching title, with no error thrown
+- [X] T018 [P] [US3] Smoke test (extend `tests/unit/App.test.jsx`) asserting that selecting "Products" and "About Us" each render the `ComingSoon` placeholder with the matching title, with no error thrown
 
 ### Implementation for User Story 3
 
-- [ ] T019 [P] [US3] Create `src/pages/ComingSoon.jsx` accepting a `title` prop and rendering a "coming soon" style message for that section (per contracts/ui-contract.md ComingSoon guarantees)
-- [ ] T020 [P] [US3] Create `src/pages/ComingSoon.css` with basic placeholder-page styling
-- [ ] T021 [US3] Add `/products` and `/about-us` routes in `src/App.jsx` rendering `<ComingSoon title="Products" />` and `<ComingSoon title="About Us" />` respectively (depends on T006, T019)
+- [X] T019 [P] [US3] Create `src/pages/ComingSoon.jsx` accepting a `title` prop and rendering a "coming soon" style message for that section (per contracts/ui-contract.md ComingSoon guarantees)
+- [X] T020 [P] [US3] Create `src/pages/ComingSoon.css` with basic placeholder-page styling
+- [X] T021 [US3] Add `/products` and `/about-us` routes in `src/App.jsx` rendering `<ComingSoon title="Products" />` and `<ComingSoon title="About Us" />` respectively (depends on T006, T019)
 
 **Checkpoint**: All user stories are independently functional — every nav item leads to a valid, non-error page.
 
@@ -123,9 +123,9 @@ Single frontend project at the repository root, per plan.md's Project Structure:
 
 **Purpose**: Confirm the whole feature works end-to-end and is documented
 
-- [ ] T022 [P] Walk through quickstart.md's manual validation steps (welcome content, header/branding, all 3 nav items, responsive check at ~375px and ~1280px) and fix any layout issues found in `src/components/Header.css`, `src/components/NavMenu.css`, or `src/pages/Home.css`
-- [ ] T023 Run `npm run build` and confirm the production build completes without errors
-- [ ] T024 [P] Add a root `README.md` documenting how to install, run the dev server, run tests, and build, per quickstart.md
+- [X] T022 [P] Walk through quickstart.md's manual validation steps (welcome content, header/branding, all 3 nav items, responsive check at ~375px and ~1280px) and fix any layout issues found in `src/components/Header.css`, `src/components/NavMenu.css`, or `src/pages/Home.css`
+- [X] T023 Run `npm run build` and confirm the production build completes without errors
+- [X] T024 [P] Add a root `README.md` documenting how to install, run the dev server, run tests, and build, per quickstart.md
 
 ---
 
