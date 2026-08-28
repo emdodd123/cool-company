@@ -1,11 +1,11 @@
-import homeImage from '../assets/home-placeholder.svg'
+import homeImage from '../assets/home-image.jpg'
 import './Home.css'
 
 function Home() {
   return (
     <main className="home">
       <h1>Welcome to The Cool Company</h1>
-      <img className="home-image" src={homeImage} alt="A preview of what The Cool Company offers" />
+      <img className="home-image" src={homeImage} alt="A visitor standing in front of the Eiffel Tower" />
     </main>
   )
 }
