@@ -1,16 +1,6 @@
 ---
-name: speckit-plan
 description: Create a plan and store it in plan.md.
-argument-hint: "Optional guidance for the planning phase"
-compatibility: Requires spec-kit project structure with .specify/ directory
-metadata:
-  author: github-spec-kit
-  source: preset:lean
-user-invocable: true
-disable-model-invocation: false
 ---
-
-# Speckit Plan Skill
 
 ## User Input
 

@@ -1,16 +1,6 @@
 ---
-name: speckit-specify
 description: Create a specification and store it in spec.md.
-argument-hint: "Describe the feature you want to specify"
-compatibility: Requires spec-kit project structure with .specify/ directory
-metadata:
-  author: github-spec-kit
-  source: preset:lean
-user-invocable: true
-disable-model-invocation: false
 ---
-
-# Speckit Specify Skill
 
 ## User Input
 

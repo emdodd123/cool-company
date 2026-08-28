@@ -1,16 +1,6 @@
 ---
-name: speckit-tasks
 description: Create the tasks needed for implementation and store them in tasks.md.
-argument-hint: "Optional task generation constraints"
-compatibility: Requires spec-kit project structure with .specify/ directory
-metadata:
-  author: github-spec-kit
-  source: preset:lean
-user-invocable: true
-disable-model-invocation: false
 ---
-
-# Speckit Tasks Skill
 
 ## User Input
 

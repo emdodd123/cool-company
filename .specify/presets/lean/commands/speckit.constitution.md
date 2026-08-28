@@ -1,16 +1,6 @@
 ---
-name: speckit-constitution
 description: Create or update the project constitution.
-argument-hint: "Principles or values for the project constitution"
-compatibility: Requires spec-kit project structure with .specify/ directory
-metadata:
-  author: github-spec-kit
-  source: preset:lean
-user-invocable: true
-disable-model-invocation: false
 ---
-
-# Speckit Constitution Skill
 
 ## User Input
 
@@ -32,7 +22,7 @@ propagating constitution-driven changes to dependent Spec Kit artifacts.
 - If an instruction could be either constitution content or a non-governance intent, ask for
   clarification before making changes.
 - After updating the constitution, list each deferred intent in a `Next Actions` section with an
-  appropriate follow-up Spec Kit command, such as `/speckit-specify`, but do not
+  appropriate follow-up Spec Kit command, such as `__SPECKIT_COMMAND_SPECIFY__`, but do not
   invoke it.
 - Omit `Next Actions` when there are no non-governance intents.
 

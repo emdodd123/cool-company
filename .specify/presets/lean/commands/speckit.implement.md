@@ -1,16 +1,6 @@
 ---
-name: speckit-implement
 description: Execute the implementation plan by processing all tasks in tasks.md.
-argument-hint: "Optional implementation guidance or task filter"
-compatibility: Requires spec-kit project structure with .specify/ directory
-metadata:
-  author: github-spec-kit
-  source: preset:lean
-user-invocable: true
-disable-model-invocation: false
 ---
-
-# Speckit Implement Skill
 
 ## User Input
 
